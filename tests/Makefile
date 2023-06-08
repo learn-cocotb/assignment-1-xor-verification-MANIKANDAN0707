@@ -1,7 +1,7 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 VERILOG_SOURCES += $(PWD)/../hdl/dut.v
-VERILOG_SOURCES += $(PWD)/../wrappers/or_test.v
+VERILOG_SOURCES += $(PWD)/../wrappers/xor_test.v
 TOPLEVEL = dut
-MODULE = dut_test
+MODULE = xor_test
 include $(shell cocotb-config --makefiles)/Makefile.sim
