@@ -10,8 +10,8 @@ async def dut_test(dut):
     y=(0,1,1,0)
     #Test verification y , iteration of a ,b
     for i in range(4):
-    dut.a.value = a[i]
-    dut.b.value = b[i]
+        dut.a.value = a[i]
+        dut.b.value = b[i]
     #wait for 1 nanosecond before proceeding to
     #allow the DUT to process the in and produce out
     await Timer(1,'ns')
